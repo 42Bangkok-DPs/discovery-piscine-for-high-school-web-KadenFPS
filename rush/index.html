@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<title>
+    Home
+</title>
+<body>
+    <div class="header" id="header">
+        <div class="navbar">
+            <a href="index.html">&nbsp;&nbsp;🏠︎&nbsp;P&nbsp;O&nbsp;R&nbsp;T&nbsp;F&nbsp;O&nbsp;L&nbsp;I&nbsp;O&nbsp;</a>
+        </div>
+        <div class="drop" style="float: right; margin-right: 50px;">
+                <button onclick="Dropdown()"> <u>Profile</u> </button> 
+                <div id="myDrop" class="dropCon">
+                    <a href="KlaoProfile.html">Konphob</a>
+                    <a href="pro2.html">Suphakorn</a>
+                </div>
+        </div>
+    </div>
+
+    <div style="height: 1700px;">
+        <div style="height: 1550px;">
+            
+        </div>
+        <div class="bottomtextone">
+            CONTACT US
+        </div>
+        <div class="bottomtexttwo">
+            <span style="font-size: 32px; float: left; padding-left: 40px;">
+                &#128222 082-316-7339 | 098-398-7883
+            </span>
+            <span style="font-size: 32px; float: right; padding-right: 40px;">
+                &#128386 KPskulpitr@gmail.com
+            </span>
+        </div>
+    </div> 
+    
+</body>
+
+<script>
+    let BeforeScroll = window.pageYOffset;
+    const header = document.getElementById("header");
+    window.onscroll = function() {
+        let CurrentScroll = window.pageYOffset
+        if (BeforeScroll > CurrentScroll) {
+            header.style.top = "0";
+        }
+        else {
+            header.style.top = "-175px";
+        }
+        BeforeScroll = CurrentScroll;
+    }
+    function Dropdown() {
+            document.getElementById("myDrop").classList.toggle("show");
+    }
+</script>
+</html>
