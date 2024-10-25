@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test2.css">
+    <title>Portfolio | Kongphob</title>
+</head>
+<body>
+    <div class="header" id="header">
+        <div class="navbar">
+            <a href="main.html">&nbsp;&nbsp;🏠︎&nbsp;P&nbsp;O&nbsp;R&nbsp;T&nbsp;F&nbsp;O&nbsp;L&nbsp;I&nbsp;O&nbsp;</a>
+        </div>
+        <div class="drop" style="float: right; margin-right: 3vw;">
+            <button onclick="Dropdown()"> <u>Profile</u> </button> 
+            <div id="myDrop" class="dropCon">
+                <a href="pro1.html">Konphob</a>
+                <a href="pro2.html">Suphakorn</a>
+            </div>
+        </div>
+    </div>
+    <div class="text" style="display: flex; justify-content:space-evenly;">
+        <div style="text-align: center;">
+            <a href="pro1.html">
+                <img class="nav-image"src="img/klaoProfile.jpg" alt="klaoProfile">
+            </a>
+            <div style="margin-top: 2vw;">
+                <a class="ProButton" href="pro1.html">
+                    Kongphob's Profile
+                </a>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <a href="pro2.html">
+                <img class="nav-image"src="img/PondProfile.jpg" alt="pondProfile">
+            </a>
+            <div style="margin-top: 2vw;">
+                <a class="ProButton" href="pro2.html">
+                    Suphakorn's Profile
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bottom">
+        <div class="bottomtextone">CONTACT US</div>
+        <div class="bottomtexttwo">
+            <span style="float: left; padding-left: 4vw;">
+                &#128222 082-316-7339 | 098-398-7883
+            </span>
+            <span style="float: right; padding-right: 4vw;">
+                &#128386 KPskulpitr@gmail.com
+            </span>
+        </div>
+    </div>
+</body>
+
+<script>
+    let BeforeScroll = window.pageYOffset;
+    const header = document.getElementById("header");
+    window.onscroll = function() {
+        let CurrentScroll = window.pageYOffset;
+        if (BeforeScroll > CurrentScroll) {
+            header.style.top = "0";
+        } else {
+            header.style.top = "-50%";
+        }
+        BeforeScroll = CurrentScroll;
+    }
+    function Dropdown() {
+        document.getElementById("myDrop").classList.toggle("show");
+    }
+</script>
+</html>

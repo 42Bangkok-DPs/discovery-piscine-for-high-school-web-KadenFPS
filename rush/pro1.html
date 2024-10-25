@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test2.css">
+    <title>Portfolio | Kongphob</title>
+</head>
+<body>
+    <div class="header" id="header">
+        <div class="navbar">
+            <a href="main.html">&nbsp;&nbsp;🏠︎&nbsp;P&nbsp;O&nbsp;R&nbsp;T&nbsp;F&nbsp;O&nbsp;L&nbsp;I&nbsp;O&nbsp;</a>
+        </div>
+        <div class="drop" style="float: right; margin-right: 3vw;">
+            <button onclick="Dropdown()"> <u>Profile</u> </button> 
+            <div id="myDrop" class="dropCon">
+                <a href="pro1.html">Konphob</a>
+                <a href="pro2.html">Suphakorn</a>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <img class="profile-image" src="img/klaoProfile.jpg" alt="Profile picture">
+    </div>
+    <div class="profile-name">
+        <strong>
+            KONGPHOB SKULPHAN
+        </strong>
+    </div>
+    <div class="text-box">
+        <div class="header-text">
+            <h1>
+                Personal Information
+            </h1>
+            <div class="text">
+                <h4>
+                    Name: Kongphob Skulphan
+                </h4>
+                <h4>
+                    Title: Aspiring Software Developer & Communication Enthusiast
+                </h4>
+                <h4>
+                    About Me:
+                </h4>
+                <p>
+                    I am a dedicated student currently building my portfolio as I pursue admission to a top university. With a strong foundation in coding and excellent communication skills, I aim to bring creativity and problem-solving to every project. I am passionate about learning new technologies and expanding my technical expertise while collaborating with others to achieve meaningful results.
+                </p>
+                <h4>
+                    My Certificate :
+                </h4>
+                <div class="certificate-container">
+                    <img class="certificate" src="img/KlaoCer1 (1).jpg" alt="Certificate">
+                    <img class="certificate" src="img/KlaoCer2.jpg" alt="Certificate">
+                </div>
+                <div style="width: 200px; height: 15vh; background-color: rgba(0,31,63,0)">
+
+                </div>
+                <p style="font-size: 2vw; padding-bottom: 3vh;">
+                    Tel : 082-316-7339 Email : ilikeitsomuch.15548@gmail.com
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    let BeforeScroll = window.pageYOffset;
+    const header = document.getElementById("header");
+    window.onscroll = function() {
+        let CurrentScroll = window.pageYOffset;
+        if (BeforeScroll > CurrentScroll) {
+            header.style.top = "0";
+        } else {
+            header.style.top = "-50%";
+        }
+        BeforeScroll = CurrentScroll;
+    }
+    function Dropdown() {
+        document.getElementById("myDrop").classList.toggle("show");
+    }
+</script>
+</html>

@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    max-width: 100%;
+    background-color: #B9E5E8;
+    background-image: url('img/classroom_downscale_2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #001F3F;
+    color: #DFF2EB;
+    z-index: 1000;
+    transition: top 0.3s;
+    font-size: 1.5vw; /* Adjusted to vw */
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    height: 5vw; /* Adjusted to vw */
+    padding: 0 2vw; /* Adjusted padding */
+}
+
+.navbar {
+    color: #DFF2EB;
+}
+
+button {
+    color: #DFF2EB;
+    border: 0;
+    background-color: transparent;
+    font-size: 1.2vw; /* Adjusted to vw */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button:hover {
+    color: #767a79;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.drop {
+    position: relative; 
+    display: inline-block; 
+}
+
+.dropCon {
+    display: none; 
+    position: absolute; 
+    background-color: #f9f9f9;
+    min-width: 10vw; /* Adjusted to vw */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    z-index: 1; 
+    left: -5vw; /* Adjusted to vw */
+}
+
+.dropCon a {
+    color: black;
+    padding: 1vw; /* Adjusted to vw */
+    text-decoration: none;
+    display: block; 
+    font-size: 1vw; /* Adjusted to vw */
+}
+
+.dropCon a:hover {
+    background-color: #aaa9a9; 
+}
+
+.show {
+    display: block;
+}
+
+.bottomtextone {
+    background-color: #6A9AB0; 
+    height: 5vw; /* Adjusted to vw */
+    margin: 0 auto; 
+    padding-left: 6vw; 
+    font-size: 2vw; /* Adjusted to vw */
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 9vw; /* Adjusted to vw */
+    max-width: 100%;
+}
+
+.bottomtexttwo {
+    width: 100%;
+    background-color: #6A9AB0; 
+    height: 5vw; /* Adjusted to vw */
+    margin: 0; 
+    font-size: 1.5vw; /* Adjusted to vw */
+    line-height: 5vw; /* Adjusted to vw */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.bottom {
+    bottom: 0;
+    left: 0;  
+    width: 100%;
+    margin-bottom: 0;
+    position: fixed;
+}
+
+.profile-image{
+    border-radius: 50%;
+    width: 20vw;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 13%;
+}
+.profile-name{
+    color: #001F3F;
+    width: 100%;
+    text-align: center;
+    margin-top: 1vw;
+    margin-left: 0%;
+    font-size: 3vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+.text-box{
+    width: 95vw;
+    height: auto;
+    background-color: rgba(0,31,63,0.5);
+    max-width: 100%;
+    margin: 0 auto;
+}
+.text{
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+    font-size: 1.3vw;
+    margin: 20px;
+    margin-top: 0;
+    padding-top: 0;
+}
+.header-text{
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+    font-size: 1.5vw;
+    margin: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.certificate {
+    width: 30vw;
+    height: auto;
+}
+.certificate:hover {
+    width: 30vw;
+    height: auto;
+}
+.certificate-container {
+    display: flex;
+    gap: 1vw;
+}
+.nav-image{
+    border-radius: 50%;
+    width: 20vw;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0;
+    margin-top: 40%;
+}
+.ProButton{
+    background-color: #001F3F;
+    padding: 0.5vw;
+    border-radius: 1vh;
+    font-size: 1.5vw;
+}
+.ProButton:hover{
+    background-color: #0c4883;
+    padding: 0.5vw;
+    border-radius: 1.2vh;
+    font-size: 1.7vw;
+}
